@@ -8,7 +8,11 @@ export const globalStyles = StyleSheet.create ({
     logoBackground: {
         backgroundColor: "black",
         padding: 30,
-        marginBottom: 50,
+        marginBottom: 20,
+    },
+
+    loginBody: {
+        marginTop: 40
     },
 
     logo: {
@@ -37,7 +41,7 @@ export const globalStyles = StyleSheet.create ({
         marginBottom: 20
     },
 
-    emailLogo: {
+    iconLogo: {
         width: 20,
         height: 20,
         marginRight: 8,
@@ -51,12 +55,6 @@ export const globalStyles = StyleSheet.create ({
         height: 50,
     },
 
-    passwordLogo: {
-        width: 20,
-        height: 20,
-        marginRight: 8,
-        marginLeft: 8
-    },
 
     loginLinks: {
         flex: 1,
@@ -89,4 +87,25 @@ export const globalStyles = StyleSheet.create ({
         fontWeight: "bold",
         fontStyle: "italic"
     },
+
+    loginLink: {
+        fontSize: 16,
+        fontWeight: "bold",
+        fontStyle: "italic"
+    },
+
+    h2: {
+        fontSize: 24,
+        fontWeight: "bold",
+        marginBottom: 10
+    },
+
+    h3: {
+        fontSize: 18,
+    },
+
+    hTitles: {
+        padding: 10,
+        marginBottom: 10
+    }
 });
