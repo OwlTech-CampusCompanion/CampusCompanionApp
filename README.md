@@ -1,56 +1,187 @@
-# Welcome to your Expo app 👋
+# Campus Companion
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Campus Companion is a mobile application designed to help college students navigate campus, discover campus services, and stay informed about campus events—all in one place.
 
-## Get started
+## 📱 Overview
 
-1. Install dependencies
+Campus Companion provides students with a centralized way to access useful campus resources and information. The application is being developed as a senior capstone project with a focus on improving the student campus experience.
 
-   ```bash
-   npm install
-   ```
+### Planned Features
 
-2. Start the app
+* 🗺️ **Interactive Campus Map**
 
-   ```bash
-   npx expo start
-   ```
+  * View campus buildings and points of interest
+  * Find important campus locations
+  * View your current location
 
-In the output, you'll find options to open the app in a
+* 🧭 **Campus Navigation**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+  * Get directions to campus buildings and locations
+  * Support for navigating between campus locations
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* 📅 **Campus Events**
 
-## Get a fresh project
+  * Browse upcoming campus events
+  * View event details
+  * RSVP to events
+  * Receive event reminders
 
-When you're ready, run:
+* 🍔 **Campus Dining**
 
-```bash
-npm run reset-project
+  * View available campus dining locations
+  * View dining information and menus when available
+
+* 🚌 **Campus Shuttle**
+
+  * View campus shuttle information
+  * View shuttle routes and stops
+  * Track shuttle information when supported
+
+* 👤 **User Accounts**
+
+  * Create an account
+  * Log in and log out
+  * Manage user information
+
+## 🛠️ Technologies
+
+### Frontend
+
+* React Native
+* Expo
+* TypeScript
+
+### Backend
+
+* Java
+* Spring Boot
+* PostgreSQL
+
+### Development Tools
+
+* Git & GitHub
+* Visual Studio Code
+* Expo Go
+
+## 📂 Project Structure
+
+```text
+CampusCompanionApp/
+├── app/                 # Application screens and routes
+├── components/          # Reusable React Native components
+├── styles/              # Shared application styles
+├── assets/              # Images, icons, and other assets
+├── services/            # API and backend communication
+├── constants/           # Shared constants and configuration
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+> The project structure may change as development continues.
 
-### Other setup steps
+## 🚀 Getting Started
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### Prerequisites
 
-## Learn more
+Make sure you have the following installed:
 
-To learn more about developing your project with Expo, look at the following resources:
+* Node.js
+* npm
+* Expo
+* Git
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+You can also install **Expo Go** on a mobile device to test the application during development.
 
-## Join the community
+### Installation
 
-Join our community of developers creating universal apps.
+Clone the repository:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+git clone https://github.com/Owl-tech-CampusCompanion/CampusCompanionApp.git
+```
+
+Navigate into the project:
+
+```bash
+cd CampusCompanionApp
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the Expo development server:
+
+```bash
+npx expo start
+```
+
+You can then scan the QR code using Expo Go to run the application on a compatible mobile device.
+
+## 🔧 Development
+
+The project is currently under active development.
+
+The frontend is being developed using React Native with Expo. Backend functionality will be connected through a Spring Boot REST API, with PostgreSQL used for persistent data storage.
+
+## 🏗️ System Architecture
+
+```text
+┌──────────────────────┐
+│    Mobile Device     │
+│   React Native/Expo  │
+└──────────┬───────────┘
+           │
+           │ REST API
+           ▼
+┌──────────────────────┐
+│     Spring Boot      │
+│       Backend        │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│      PostgreSQL      │
+│       Database       │
+└──────────────────────┘
+```
+
+External services and APIs may also be integrated to provide functionality such as maps, navigation, campus events, and other campus-related information.
+
+## 👥 Team
+
+**Owl-Tech — Campus Companion**
+
+| Team Member   | Role                        |
+| ------------- | --------------------------- |
+| Robert Humes  | Team Leader / Documentation |
+| Kylan Fleming | Developer                   |
+| Joseph Dix    | QA Tester / Documentation   |
+| Aaron Arroyo  | Developer                   |
+
+## 📚 Project Documentation
+
+Additional project documentation will be added as development progresses.
+
+* Software Requirements Specification (SRS)
+* System Architecture
+* Detailed System Design
+* Testing Documentation
+* Project Presentation
+* Project Demonstration
+
+## 📌 Project Status
+
+**Status:** In Development 🚧
+
+Current development focuses on establishing the React Native/Expo application structure, designing the user interface, and preparing the application for backend integration.
+
+## 🎓 Academic Project
+
+Campus Companion is being developed as a senior capstone project at Kennesaw State University.
+
+---
+
+**Owl-Tech — Campus Companion**
