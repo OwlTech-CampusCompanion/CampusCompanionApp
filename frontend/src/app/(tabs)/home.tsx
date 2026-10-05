@@ -20,12 +20,12 @@ export default function Index() {
             />
           </View>
         </View>
-        <View style={globalStyles.hTitles}>
-          <Text style={globalStyles.h2}>
+        <View style={globalStyles.Titles}>
+          <Text style={globalStyles.h4}>
             Good morning, (person name)!
           </Text>
         </View>
-        <View style={globalStyles.loginInput}>
+        <View style={globalStyles.searchInput}>
           <Image
             source={require("../../../assets/images/Search-Logo.png")}
             style={globalStyles.iconLogo}
@@ -37,12 +37,12 @@ export default function Index() {
             placeholderTextColor={"black"}
           />
         </View>
-        <View style={globalStyles.hTitles}>
-          <Text style={globalStyles.h3}>
+        <View style={globalStyles.homeTitles}>
+          <Text style={globalStyles.h4}>
             Quick Access
           </Text>
           <Link href="/events">
-            <Text>View All</Text>
+            <Text>View All {">"} </Text>
           </Link>
         </View>
         <View style={globalStyles.tabHolder}>
@@ -53,7 +53,7 @@ export default function Index() {
             >
               <Image
                 source={require("../../../assets/images/Map-Logo.png")}
-                style={globalStyles.iconLogo}
+                style={globalStyles.icon}
               />
               <Text style={globalStyles.buttonText}>
                 Map
@@ -67,7 +67,7 @@ export default function Index() {
             >
               <Image
                 source={require("../../../assets/images/Events-Logo.png")}
-                style={globalStyles.iconLogo}
+                style={globalStyles.icon}
               />
               <Text style={globalStyles.buttonText}>
                 Events
@@ -81,7 +81,7 @@ export default function Index() {
             >
               <Image
                 source={require("../../../assets/images/Dining-Logo.png")}
-                style={globalStyles.iconLogo}
+                style={globalStyles.icon}
               />
               <Text style={globalStyles.buttonText}>
                 Dining
@@ -95,7 +95,7 @@ export default function Index() {
             >
               <Image
                 source={require("../../../assets/images/Bus-Logo.png")}
-                style={globalStyles.iconLogo}
+                style={globalStyles.icon}
               />
               <Text style={globalStyles.buttonText}>
                 Shuttle
@@ -103,15 +103,15 @@ export default function Index() {
             </Pressable>
           </View>
         </View>
-        <View style={globalStyles.hTitles}>
-          <Text style={globalStyles.h3}>
+        <View style={globalStyles.homeTitles}>
+          <Text style={globalStyles.h4}>
             Saved Events
           </Text>
           <Link href="/events">
-            <Text>View All</Text>
+            <Text>View All {">"}</Text>
           </Link>
         </View>
-        <View style={globalStyles.eventHolder}>
+        <View>
           <View style={globalStyles.eventCard}>
             <View style={globalStyles.eventDate}>
               <Text style={globalStyles.eventMonth}>SEP</Text>

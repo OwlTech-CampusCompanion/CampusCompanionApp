@@ -37,11 +37,19 @@ export const globalStyles = StyleSheet.create ({
     },
 
     tabPress: {
-        
+        backgroundColor: "black",
+        height: 100,
+        width: 90,
+        borderRadius: 20,
+        alignItems: "center",
+        padding: 10
     },
 
     tabHolder: {
-
+        flexDirection: "row",
+        justifyContent: "center",
+        gap: 5,
+        marginBottom: 30
     },
 
 
@@ -85,7 +93,7 @@ export const globalStyles = StyleSheet.create ({
     icon: {
         width: 20,
         height: 20,
-        resizeMode: "contain",
+        marginTop: 10
     },
 
     input: {
@@ -137,54 +145,94 @@ export const globalStyles = StyleSheet.create ({
     h2: {
         fontSize: 24,
         fontWeight: "bold",
-        marginBottom: 10
     },
 
     h3: {
         fontSize: 18,
     },
 
+    h4: {
+        fontSize: 22,
+        fontWeight: "bold"
+    },
+
     hTitles: {
         padding: 10,
+        flexDirection: "column",
+        marginLeft: 10,
         marginBottom: 10
+    },
+
+    homeTitles: {
+        padding: 10,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginLeft: 10,
     },
 
     eventCard: {
         flexDirection: "row",
+        backgroundColor: "black",
+        borderRadius: 20,
+        padding: 10,
+        margin: 10,
     },
 
     eventDate: {
         alignItems: "center",
         justifyContent: "center",
+        marginLeft: 10,
+        backgroundColor: "white",
+        borderRadius: 10,
+        padding: 10,
+        width: 75
     },
 
     eventMonth: {
         fontSize: 14,
         fontWeight: "bold",
+        color: "black",
     },
 
     eventDay: {
         fontSize: 28,
         fontWeight: "bold",
+        color: "black",
     },
 
     eventInfo: {
         marginLeft: 15,
+        justifyContent: "center"
     },
 
     eventName: {
         fontWeight: "bold",
+        color: "white",
     },
 
     eventLocation: {
-
+        color: "white",
     },
 
     eventTime: {
-
+        color: "white",
     },
 
-    eventHolder: {
-        
+    Titles: {
+        padding: 10,
+        marginLeft: 10,
+        marginBottom: 10
     },
+
+    searchInput: {
+        flexDirection: "row",
+        alignItems: "center",
+        borderRadius: 8,
+        paddingHorizontal: 8,
+        backgroundColor: "rgba(52, 52, 52, 0.05)",
+        width: 350,
+        marginLeft: 20,
+        marginBottom: 30
+    }
 });
