@@ -11,6 +11,21 @@ export const globalStyles = StyleSheet.create ({
         marginBottom: 20,
     },
 
+    logoTabsBackground: {
+        backgroundColor: "black",
+        padding: 30,
+        marginBottom: 20,
+    },
+
+    tabPress: {
+        
+    },
+
+    tabHolder: {
+
+    },
+
+
     loginBody: {
         marginTop: 40
     },

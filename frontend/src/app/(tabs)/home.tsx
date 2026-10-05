@@ -1,10 +1,108 @@
-import { Text, View } from "react-native";
+import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback } from "react-native";
 import { globalStyles } from "../../../styles/global";
+import { Link } from "expo-router";
+import { dismiss, router } from "expo-router/build/global-state/router";
 
 export default function Index() {
   return (
-    <View style={globalStyles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <View style={globalStyles.container}>
+        <View style={globalStyles.logoTabsBackground}>
+          <Image
+            source={require("../../assets/images/KSU-Logo.png")}
+            style={globalStyles.logo}
+          />
+          <Text style={globalStyles.title}>Campus Companion</Text>
+          <Image
+            source={require("../../assets/images/Notification-Logo.png")}
+            style={globalStyles.iconLogo}
+          />
+        </View>
+        <View style={globalStyles.hTitles}>
+          <Text style={globalStyles.h2}>
+            Good morning, (person name)!
+          </Text>
+        </View>
+        <View style={globalStyles.loginInput}>
+          <Image
+            source={require("../../assets/images/Search-Logo.png")}
+            style={globalStyles.iconLogo}
+          />
+          <TextInput
+            style={globalStyles.input}
+            autoCapitalize="words"
+            placeholder="Search campus..."
+            placeholderTextColor={"black"}
+          />
+        </View>
+        <View style={globalStyles.hTitles}>
+          <Text style={globalStyles.h3}>
+            Quick Access
+          </Text>
+          <Link href="/events">
+            <Text>View All</Text>
+          </Link>
+        </View>
+        <View style={globalStyles.tabHolder}>
+          <View>
+            <Pressable
+              onPress={() => router.push("/map")}
+              style={globalStyles.tabPress}
+            >
+              <Image
+                source={require("../../assets/images/Map-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Map
+              </Text>
+            </Pressable>
+          </View>
+          <View>
+            <Pressable
+              onPress={() => router.push("/events")}
+              style={globalStyles.tabPress}
+            >
+              <Image
+                source={require("../../assets/images/Events-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Events
+              </Text>
+            </Pressable>
+          </View>
+          <View>
+            <Pressable
+              onPress={() => router.push("/dining")}
+              style={globalStyles.tabPress}
+            >
+              <Image
+                source={require("../../assets/images/Dining-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Dining
+              </Text>
+            </Pressable>
+          </View>
+          <View>
+            <Pressable
+              onPress={() => router.push("/")}
+              style={globalStyles.tabPress}
+            >
+              <Image
+                source={require("../../assets/images/Bus-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Shuttle
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+        
+      </View>
+    </TouchableWithoutFeedback>
   );
 }
