@@ -13,8 +13,27 @@ export const globalStyles = StyleSheet.create ({
 
     logoTabsBackground: {
         backgroundColor: "black",
-        padding: 30,
+        padding: 25,
         marginBottom: 20,
+        flexDirection: "row",
+        alignItems: "center"
+    },
+
+    tabsLogo: {
+        width: 40,
+        height: 40,
+    },
+
+    tabsTitle: {
+        color: "white",
+        fontSize: 20,
+        fontWeight: "bold"
+    },
+
+    notifyLogo: {
+        color: "white",
+        height: 30,
+        width: 30,
     },
 
     tabPress: {
@@ -61,6 +80,12 @@ export const globalStyles = StyleSheet.create ({
         height: 20,
         marginRight: 8,
         marginLeft: 8
+    },
+
+    icon: {
+        width: 20,
+        height: 20,
+        resizeMode: "contain",
     },
 
     input: {
@@ -161,9 +186,5 @@ export const globalStyles = StyleSheet.create ({
 
     eventHolder: {
         
-    },
-
-    footerTabs: {
-
     },
 });

@@ -1,6 +1,6 @@
 import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback } from "react-native";
 import { globalStyles } from "../../styles/global";
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import { useState } from "react";
 
 export default function Index() {
@@ -68,7 +68,7 @@ export default function Index() {
         </View>
         <View style={globalStyles.loginLinks}>
           <Pressable 
-            onPress={handleLogin}
+            onPress={() => router.replace("/home")}
             style={globalStyles.loginButton}>
             <Text style={globalStyles.buttonText}>Login</Text>
             </Pressable>

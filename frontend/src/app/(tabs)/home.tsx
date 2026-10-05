@@ -1,7 +1,7 @@
 import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback } from "react-native";
 import { globalStyles } from "../../../styles/global";
 import { Link } from "expo-router";
-import { dismiss, router } from "expo-router/build/global-state/router";
+import { router } from "expo-router/build/global-state/router";
 
 export default function Index() {
   return (
@@ -9,14 +9,16 @@ export default function Index() {
       <View style={globalStyles.container}>
         <View style={globalStyles.logoTabsBackground}>
           <Image
-            source={require("../../assets/images/KSU-Logo.png")}
-            style={globalStyles.logo}
+            source={require("../../../assets/images/KSU-Logo.png")}
+            style={globalStyles.tabsLogo}
           />
-          <Text style={globalStyles.title}>Campus Companion</Text>
-          <Image
-            source={require("../../assets/images/Notification-Logo.png")}
-            style={globalStyles.iconLogo}
-          />
+          <Text style={globalStyles.tabsTitle}>Campus Companion</Text>
+          <View>
+            <Image
+              source={require("../../../assets/images/Notification-Logo.png")}
+              style={globalStyles.notifyLogo}
+            />
+          </View>
         </View>
         <View style={globalStyles.hTitles}>
           <Text style={globalStyles.h2}>
@@ -25,7 +27,7 @@ export default function Index() {
         </View>
         <View style={globalStyles.loginInput}>
           <Image
-            source={require("../../assets/images/Search-Logo.png")}
+            source={require("../../../assets/images/Search-Logo.png")}
             style={globalStyles.iconLogo}
           />
           <TextInput
@@ -50,7 +52,7 @@ export default function Index() {
               style={globalStyles.tabPress}
             >
               <Image
-                source={require("../../assets/images/Map-Logo.png")}
+                source={require("../../../assets/images/Map-Logo.png")}
                 style={globalStyles.iconLogo}
               />
               <Text style={globalStyles.buttonText}>
@@ -64,7 +66,7 @@ export default function Index() {
               style={globalStyles.tabPress}
             >
               <Image
-                source={require("../../assets/images/Events-Logo.png")}
+                source={require("../../../assets/images/Events-Logo.png")}
                 style={globalStyles.iconLogo}
               />
               <Text style={globalStyles.buttonText}>
@@ -78,7 +80,7 @@ export default function Index() {
               style={globalStyles.tabPress}
             >
               <Image
-                source={require("../../assets/images/Dining-Logo.png")}
+                source={require("../../../assets/images/Dining-Logo.png")}
                 style={globalStyles.iconLogo}
               />
               <Text style={globalStyles.buttonText}>
@@ -92,7 +94,7 @@ export default function Index() {
               style={globalStyles.tabPress}
             >
               <Image
-                source={require("../../assets/images/Bus-Logo.png")}
+                source={require("../../../assets/images/Bus-Logo.png")}
                 style={globalStyles.iconLogo}
               />
               <Text style={globalStyles.buttonText}>
@@ -124,60 +126,13 @@ export default function Index() {
             <View style={globalStyles.eventCard}>
               <View style={globalStyles.eventDate}>
                 <Text style={globalStyles.eventMonth}>SEP</Text>
-                <Text style={globalStyles.eventDay}>18</Text>
+                <Text style={globalStyles.eventDay}>23</Text>
               </View>
               <View style={globalStyles.eventInfo}>
                 <Text style={globalStyles.eventName}>Fall Career Fair</Text>
                 <Text style={globalStyles.eventLocation}>Student Center</Text>
                 <Text style={globalStyles.eventTime}>10:00 AM - 2:00 PM</Text>
               </View>
-            </View>
-          </View>
-          <View style={globalStyles.footerTabs}>
-            <View>
-              <Image
-                source={require("../../assets/images/Home-Logo.png")}
-                style={globalStyles.iconLogo}
-              />
-              <Text style={globalStyles.buttonText}>
-                Home
-              </Text>
-            </View>
-            <View>
-              <Image
-                source={require("../../assets/images/Map-Logo.png")}
-                style={globalStyles.iconLogo}
-              />
-              <Text style={globalStyles.buttonText}>
-                Map
-              </Text>
-            </View>
-            <View>
-              <Image
-                source={require("../../assets/images/Events-Logo.png")}
-                style={globalStyles.iconLogo}
-              />
-              <Text style={globalStyles.buttonText}>
-                Events
-              </Text>
-            </View>
-            <View>
-              <Image
-                source={require("../../assets/images/Dining-Logo.png")}
-                style={globalStyles.iconLogo}
-              />
-              <Text style={globalStyles.buttonText}>
-                Dining
-              </Text>
-            </View>
-            <View>
-              <Image
-                source={require("../../assets/images/Profile-Logo.png")}
-                style={globalStyles.iconLogo}
-              />
-              <Text style={globalStyles.buttonText}>
-                Profile
-              </Text>
             </View>
           </View>
       </View>
