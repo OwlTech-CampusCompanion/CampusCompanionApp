@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Index() {
 
   const [email, setEmail] = useState("");
-  const [password, setPassowrd] = useState("");
+  const [password, setPassword] = useState("");
 
   // function makes sure these email or password aren't empty
   const handleLogin = () => {
@@ -61,7 +61,7 @@ export default function Index() {
             style={globalStyles.input}
             placeholder="Password"
             value={password}
-            onChangeText={setPassowrd}
+            onChangeText={setPassword}
             placeholderTextColor={"black"}
             secureTextEntry
           />

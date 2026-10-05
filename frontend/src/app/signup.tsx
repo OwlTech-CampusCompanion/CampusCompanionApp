@@ -1,8 +1,44 @@
 import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback  } from "react-native";
 import { globalStyles } from "../../styles/global";
 import { Link } from "expo-router";
+import { useState } from "react";
 
-export default function signup() {
+export default function Signup() {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+   // function makes sure these signup form isn't empty
+  const handleSignUp = () => {
+    if (name.trim() === "") {
+      alert("Please enter your full name!");
+      return;
+    }
+
+    if (email.trim() === "") {
+      alert("Please enter your email!");
+      return;
+    }
+
+    if (password.trim() === "") {
+      alert("Please enter your password!");
+      return;
+    }
+
+    if (confirmPassword.trim() === "") {
+      alert("Please enter your password!");
+      return;
+    }
+
+    if (confirmPassword !== password) {
+      alert("Passwords do not match!");
+      return;
+    }
+
+    // Signup logic later
+  }
 
 
   // SignUp UI
@@ -34,6 +70,8 @@ export default function signup() {
             style={globalStyles.input}
             autoCapitalize="words"
             placeholder="Full Name"
+            value={name}
+            onChangeText={setName}
             placeholderTextColor={"black"}
           />
         </View>
@@ -46,6 +84,8 @@ export default function signup() {
             style={globalStyles.input}
             keyboardType="email-address"
             autoCapitalize="none"
+            value={email}
+            onChangeText={setEmail}
             placeholder="KSU Email"
             placeholderTextColor={"black"}
           />
@@ -59,6 +99,8 @@ export default function signup() {
             style={globalStyles.input}
             placeholder="Password"
             placeholderTextColor={"black"}
+            value={password}
+            onChangeText={setPassword}
             secureTextEntry
           />
         </View>
@@ -71,12 +113,14 @@ export default function signup() {
             style={globalStyles.input}
             placeholder="Confirm Password"
             placeholderTextColor={"black"}
+            value={confirmPassword}
+            onChangeText={setConfirmPassword}
             secureTextEntry
           />
         </View>
         <View style={globalStyles.loginLinks}>
           <Pressable 
-            //onPress={handleLogin}
+            onPress={handleSignUp}
             style={globalStyles.loginButton}>
             <Text style={globalStyles.buttonText}>Create Account</Text>
             </Pressable>
