@@ -122,5 +122,48 @@ export const globalStyles = StyleSheet.create ({
     hTitles: {
         padding: 10,
         marginBottom: 10
-    }
+    },
+
+    eventCard: {
+        flexDirection: "row",
+    },
+
+    eventDate: {
+        alignItems: "center",
+        justifyContent: "center",
+    },
+
+    eventMonth: {
+        fontSize: 14,
+        fontWeight: "bold",
+    },
+
+    eventDay: {
+        fontSize: 28,
+        fontWeight: "bold",
+    },
+
+    eventInfo: {
+        marginLeft: 15,
+    },
+
+    eventName: {
+        fontWeight: "bold",
+    },
+
+    eventLocation: {
+
+    },
+
+    eventTime: {
+
+    },
+
+    eventHolder: {
+        
+    },
+
+    footerTabs: {
+
+    },
 });

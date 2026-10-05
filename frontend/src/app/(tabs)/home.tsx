@@ -101,7 +101,85 @@ export default function Index() {
             </Pressable>
           </View>
         </View>
-        
+        <View style={globalStyles.hTitles}>
+          <Text style={globalStyles.h3}>
+            Saved Events
+          </Text>
+          <Link href="/events">
+            <Text>View All</Text>
+          </Link>
+        </View>
+        <View style={globalStyles.eventHolder}>
+          <View style={globalStyles.eventCard}>
+            <View style={globalStyles.eventDate}>
+              <Text style={globalStyles.eventMonth}>SEP</Text>
+              <Text style={globalStyles.eventDay}>18</Text>
+            </View>
+            <View style={globalStyles.eventInfo}>
+              <Text style={globalStyles.eventName}>Fall Career Fair</Text>
+              <Text style={globalStyles.eventLocation}>Student Center</Text>
+              <Text style={globalStyles.eventTime}>10:00 AM - 2:00 PM</Text>
+            </View>
+            </View>
+            <View style={globalStyles.eventCard}>
+              <View style={globalStyles.eventDate}>
+                <Text style={globalStyles.eventMonth}>SEP</Text>
+                <Text style={globalStyles.eventDay}>18</Text>
+              </View>
+              <View style={globalStyles.eventInfo}>
+                <Text style={globalStyles.eventName}>Fall Career Fair</Text>
+                <Text style={globalStyles.eventLocation}>Student Center</Text>
+                <Text style={globalStyles.eventTime}>10:00 AM - 2:00 PM</Text>
+              </View>
+            </View>
+          </View>
+          <View style={globalStyles.footerTabs}>
+            <View>
+              <Image
+                source={require("../../assets/images/Home-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Home
+              </Text>
+            </View>
+            <View>
+              <Image
+                source={require("../../assets/images/Map-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Map
+              </Text>
+            </View>
+            <View>
+              <Image
+                source={require("../../assets/images/Events-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Events
+              </Text>
+            </View>
+            <View>
+              <Image
+                source={require("../../assets/images/Dining-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Dining
+              </Text>
+            </View>
+            <View>
+              <Image
+                source={require("../../assets/images/Profile-Logo.png")}
+                style={globalStyles.iconLogo}
+              />
+              <Text style={globalStyles.buttonText}>
+                Profile
+              </Text>
+            </View>
+          </View>
       </View>
     </TouchableWithoutFeedback>
   );
