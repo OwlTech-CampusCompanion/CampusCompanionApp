@@ -236,5 +236,9 @@ export const globalStyles = StyleSheet.create ({
         width: 350,
         marginLeft: 20,
         marginBottom: 30
+    },
+
+    map: {
+        flex: 1,
     }
 });

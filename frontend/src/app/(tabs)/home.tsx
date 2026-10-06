@@ -3,7 +3,7 @@ import { globalStyles } from "../../../styles/global";
 import { Link } from "expo-router";
 import { router } from "expo-router/build/global-state/router";
 
-export default function Index() {
+export default function HomeScreen() {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={globalStyles.container}>
