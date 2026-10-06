@@ -13,12 +13,14 @@ export default function Index() {
             style={globalStyles.tabsLogo}
           />
           <Text style={globalStyles.tabsTitle}>Campus Companion</Text>
-          <View>
+          <Pressable
+              onPress={() => router.push("/events")}
+            >
             <Image
               source={require("../../../assets/images/Notification-Logo.png")}
               style={globalStyles.notifyLogo}
             />
-          </View>
+          </Pressable>
         </View>
         <View style={globalStyles.Titles}>
           <Text style={globalStyles.h4}>

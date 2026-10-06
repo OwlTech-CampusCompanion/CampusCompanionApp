@@ -16,7 +16,9 @@ export const globalStyles = StyleSheet.create ({
         padding: 25,
         marginBottom: 20,
         flexDirection: "row",
-        alignItems: "center"
+        alignItems: "flex-end",
+        justifyContent: "space-between",
+        height: 100,
     },
 
     tabsLogo: {
@@ -26,8 +28,8 @@ export const globalStyles = StyleSheet.create ({
 
     tabsTitle: {
         color: "white",
-        fontSize: 20,
-        fontWeight: "bold"
+        fontSize: 24,
+        fontWeight: "bold",
     },
 
     notifyLogo: {
