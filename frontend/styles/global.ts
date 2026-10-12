@@ -312,5 +312,38 @@ export const globalStyles = StyleSheet.create ({
         height: 130
     },
 
+    diningCard: {
+        flexDirection: "row",
+        backgroundColor: "black",
+        borderRadius: 20,
+        padding: 10,
+        margin: 10,
+    },
+
+    diningImage: {
+        marginLeft: 10,
+        borderRadius: 20,
+        width: 150,
+        height: 130
+    },
+
+    diningInfo: {
+        marginLeft: 15,
+        justifyContent: "center"
+    },
+
+    diningName: {
+        fontWeight: "bold",
+        color: "white",
+    },
+
+    diningTime: {
+        color: "white",
+    },
+
+    diningLocation: {
+        color: "white",
+    },
+
 
 });
