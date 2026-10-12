@@ -8,12 +8,20 @@ export default function MapScreen() {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={globalStyles.container}>
-        <View style={globalStyles.MapBackground}>
+        <View style={globalStyles.logoTabsBackground}>
           <Image
             source={require("../../../assets/images/KSU-Logo.png")}
             style={globalStyles.tabsLogo}
           />
           <Text style={globalStyles.tabsTitle}>Campus Map</Text>
+          <Pressable
+              onPress={() => router.push("/events")}
+            >
+            <Image
+              source={require("../../../assets/images/Notification-Logo.png")}
+              style={globalStyles.notifyLogo}
+            />
+          </Pressable>
         </View>
         <MapView
           style={globalStyles.map}

@@ -257,15 +257,6 @@ export const globalStyles = StyleSheet.create ({
         gap: 4
     },
 
-    MapBackground: {
-        backgroundColor: "black",
-        padding: 25,
-        flexDirection: "row",
-        alignItems: "flex-end",
-        justifyContent: "center",
-        height: 100,
-    },
-
     eventButtons: {
         flexDirection: "row",
         justifyContent: "center",
@@ -345,5 +336,47 @@ export const globalStyles = StyleSheet.create ({
         color: "white",
     },
 
+    profileBackground: {
+        alignItems: "center",
+        marginTop: 40,
+        marginBottom: 10,
+        gap: 10
+    },
+
+    profileImage: {
+        height: 150,
+        width: 150
+    },
+
+    profileTabs: {
+        gap: 10,
+        margin: 10
+    },
+
+    profileTab: {
+        backgroundColor: "black",
+        padding: 10,
+        width: 325,
+        margin: "auto",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        borderRadius: 10,
+        height: 60
+    },
+
+    logoutButton: {
+        borderRadius: 10,
+        backgroundColor: "black",
+        width: 350,
+        height: 50,
+        margin: "auto"
+    },
+
+    textTab: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 18,
+    },
 
 });
