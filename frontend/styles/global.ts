@@ -14,7 +14,6 @@ export const globalStyles = StyleSheet.create ({
     logoTabsBackground: {
         backgroundColor: "black",
         padding: 25,
-        marginBottom: 20,
         flexDirection: "row",
         alignItems: "flex-end",
         justifyContent: "space-between",
@@ -71,7 +70,7 @@ export const globalStyles = StyleSheet.create ({
         fontSize: 26,
         fontWeight: "bold",
         color: "white",
-        textAlign: "center"
+        textAlign: "center",
     },
 
     loginInput: {
@@ -224,7 +223,8 @@ export const globalStyles = StyleSheet.create ({
     Titles: {
         padding: 10,
         marginLeft: 10,
-        marginBottom: 10
+        marginBottom: 10,
+        marginTop: 20
     },
 
     searchInput: {
@@ -239,6 +239,78 @@ export const globalStyles = StyleSheet.create ({
     },
 
     map: {
-        flex: 1,
-    }
+        width: "100%",
+        height: 400,
+        marginBottom: 30,
+    },
+
+    mapPress: {
+        borderRadius: 20,
+        backgroundColor: "black",
+        width: 90,
+        height: 40,
+    },
+
+    mapButtons: {
+        flexDirection: "row",
+        justifyContent: "center",
+        gap: 4
+    },
+
+    MapBackground: {
+        backgroundColor: "black",
+        padding: 25,
+        flexDirection: "row",
+        alignItems: "flex-end",
+        justifyContent: "center",
+        height: 100,
+    },
+
+    eventButtons: {
+        flexDirection: "row",
+        justifyContent: "center",
+        gap: 10
+    },
+
+    eventTitles: {
+        padding: 10,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginLeft: 10,
+    },
+    
+    eventPress: {
+        backgroundColor: "black",
+        borderRadius: 20,
+        width: 120,
+        height: 40,
+        marginBottom: 20,
+    },
+
+    rsvp: {
+        backgroundColor: "white",
+        alignItems: "center",
+        borderRadius: 4,
+        width: 100,
+        padding: 2        
+    },
+
+    eventsCard: {
+        flexDirection: "row",
+        backgroundColor: "black",
+        borderRadius: 20,
+        padding: 10,
+        margin: 10,
+        height: 150,
+    },
+
+    eventImage: {
+        marginLeft: 10,
+        borderRadius: 20,
+        width: 150,
+        height: 130
+    },
+
+
 });
