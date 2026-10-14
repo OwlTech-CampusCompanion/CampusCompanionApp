@@ -345,24 +345,28 @@ export const globalStyles = StyleSheet.create ({
 
     profileImage: {
         height: 150,
-        width: 150
+        width: 150,
+        backgroundColor: "black",
+        borderRadius: 100,
+        margin: 20
     },
 
     profileTabs: {
-        gap: 10,
-        margin: 10
+        gap: 5,
+        margin: 10,
+        marginBottom: 50
     },
 
     profileTab: {
         backgroundColor: "black",
         padding: 10,
-        width: 325,
+        width: 300,
         margin: "auto",
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
         borderRadius: 10,
-        height: 60
+        height: 50
     },
 
     logoutButton: {

@@ -7,10 +7,9 @@ export default function ProfileScreen() {
   return (
     <View style={globalStyles.container}>
       <View style={globalStyles.profileBackground}>
-        <Image
-          source={require("../../../assets/images/ProfileBig-logo.png")}
-          style={globalStyles.profileImage}
-        />
+        <View style={globalStyles.profileImage}>
+          
+        </View>
         <Text style={globalStyles.h4}>FULL NAME</Text>
         <Text style={globalStyles.h3}>KSU Student</Text>
         <Text style={globalStyles.h3}>JohnDoe23@students.kennesaw.edu</Text>
