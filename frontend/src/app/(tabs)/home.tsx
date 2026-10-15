@@ -92,7 +92,7 @@ export default function HomeScreen() {
           </View>
           <View>
             <Pressable
-              onPress={() => router.push("/")}
+              onPress={() => router.push("/shuttle")}
               style={globalStyles.tabPress}
             >
               <Image

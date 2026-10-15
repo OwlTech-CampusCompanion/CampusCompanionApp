@@ -88,6 +88,16 @@ export default function TabLayout() {
           )
         }}
       />
+
+      // Shuttle
+      <Tabs.Screen
+        name="shuttle"
+        options={{
+          href: null,
+          headerShown: false,
+          title: "Campus Shuttle",
+        }}
+      />
     </Tabs>
   );
 }

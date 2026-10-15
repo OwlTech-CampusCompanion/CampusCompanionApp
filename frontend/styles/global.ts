@@ -383,4 +383,86 @@ export const globalStyles = StyleSheet.create ({
         fontSize: 18,
     },
 
+    shuttlePressable: {
+        justifyContent: "center",
+        flexDirection: "row",
+        gap: 6
+    },
+
+    shuttlePress: {
+        backgroundColor: "black",
+        borderRadius: 20,
+        width: 175,
+        alignItems: "center"
+    },
+
+    shuttleTitles: {
+        marginTop: 40,
+        padding: 10,
+        marginLeft: 10,
+    },
+
+    shuttleText: {
+        fontSize: 20,
+        color: "white",
+        fontWeight: "bold",
+        padding: 15
+    },
+
+    shuttleTabs: {
+        flexDirection: "column",
+        justifyContent: "center",
+        gap: 6,
+
+    },
+
+    shuttleCard: {
+        borderRadius: 20,
+        backgroundColor: "black",
+        justifyContent: "space-between",
+        flexDirection: "row",
+        padding: 10,
+        margin: 10,
+    },
+
+    shuttleImage: {
+        marginLeft: 10,
+        borderRadius: 10,
+        width: 75,
+        height: 75,
+        padding: 10
+    },
+
+    shuttleInfo: {
+        justifyContent: "space-evenly",
+        flexDirection: "column",
+        alignItems: "center"
+    },
+
+    shuttleName: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 16,
+    },
+
+    shuttleDate: {
+        color: "white",
+        fontSize: 14,
+    },
+
+    shuttleTime: {
+        color: "white",
+        fontSize: 14,
+    },
+
+    liveTime: {
+        alignItems: "center",
+        justifyContent: "center",
+    },
+
+    liveText: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 20
+    }
 });
