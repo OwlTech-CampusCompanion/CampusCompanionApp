@@ -14,7 +14,7 @@ export default function HomeScreen() {
           />
           <Text style={globalStyles.tabsTitle}>Campus Companion</Text>
           <Pressable
-              onPress={() => router.push("/events")}
+              onPress={() => router.push("/notification")}
             >
             <Image
               source={require("../../../assets/images/Notification-Logo.png")}

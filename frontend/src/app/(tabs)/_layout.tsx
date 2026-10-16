@@ -95,7 +95,15 @@ export default function TabLayout() {
         options={{
           href: null,
           headerShown: false,
-          title: "Campus Shuttle",
+        }}
+      />
+
+      // Notification
+      <Tabs.Screen
+        name="notification"
+        options={{
+          href: null,
+          headerShown: false,
         }}
       />
     </Tabs>

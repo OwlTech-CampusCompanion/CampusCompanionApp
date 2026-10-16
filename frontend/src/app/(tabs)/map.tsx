@@ -1,7 +1,6 @@
 import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback } from "react-native";
 import { globalStyles } from "../../../styles/global";
 import { router } from "expo-router/build/global-state/router";
-import React from "react";
 import MapView, { Marker } from "react-native-maps";
 
 export default function MapScreen() {
@@ -15,7 +14,7 @@ export default function MapScreen() {
           />
           <Text style={globalStyles.tabsTitle}>Campus Map</Text>
           <Pressable
-              onPress={() => router.push("/events")}
+              onPress={() => router.push("/notification")}
             >
             <Image
               source={require("../../../assets/images/Notification-Logo.png")}

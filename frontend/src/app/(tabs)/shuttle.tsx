@@ -1,7 +1,5 @@
 import { Text, View, Image, Pressable, ScrollView } from "react-native";
 import { globalStyles } from "../../../styles/global";
-import { Link } from "expo-router";
-import { router } from "expo-router/build/global-state/router";
 
 export default function ShuttleScreen() {
   return (

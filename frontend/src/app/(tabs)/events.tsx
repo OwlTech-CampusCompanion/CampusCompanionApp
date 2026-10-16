@@ -1,6 +1,5 @@
 import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback } from "react-native";
 import { globalStyles } from "../../../styles/global";
-import { Link } from "expo-router";
 import { router } from "expo-router/build/global-state/router";
 
 export default function EventsScreen() {
@@ -14,7 +13,7 @@ export default function EventsScreen() {
               />
               <Text style={globalStyles.tabsTitle}>Campus Companion</Text>
               <Pressable
-                  onPress={() => router.push("/events")}
+                  onPress={() => router.push("/notification")}
                 >
                 <Image
                   source={require("../../../assets/images/Notification-Logo.png")}
