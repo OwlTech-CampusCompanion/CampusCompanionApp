@@ -1,4 +1,4 @@
-import { Text, View, Image,Pressable } from "react-native";
+import { Text, View, Image, Pressable } from "react-native";
 import { globalStyles } from "../../../styles/global";
 import { router } from "expo-router/build/global-state/router";
 
@@ -34,6 +34,7 @@ export default function ProfileScreen() {
           <Text style={globalStyles.textTab}>{">"}</Text>
         </Pressable>
         <Pressable
+          onPress={() => router.push("/settings")}
           style={globalStyles.profileTab}
         >
           <Text style={globalStyles.textTab}>Settings</Text>

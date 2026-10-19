@@ -413,7 +413,6 @@ export const globalStyles = StyleSheet.create ({
         flexDirection: "column",
         justifyContent: "center",
         gap: 6,
-
     },
 
     shuttleCard: {
@@ -464,5 +463,80 @@ export const globalStyles = StyleSheet.create ({
         color: "white",
         fontWeight: "bold",
         fontSize: 20
-    }
+    },
+
+    notifyTop: {
+        alignItems: "center",
+        justifyContent: "center",
+    },
+
+    notifyButtons: {
+        gap: 6,
+        flexDirection: "column",
+        justifyContent:"space-evenly",
+    },
+
+    notifyPress: {
+        backgroundColor: "black",
+        height: 75,
+        width: 150,
+
+    },
+
+    notifyTabs: {
+        flexDirection: "column",
+        justifyContent: "center",
+        gap: 6,
+    },
+
+    notifyCard: {
+        borderRadius: 20,
+        backgroundColor: "black",
+        justifyContent: "space-between",
+        flexDirection: "row",
+        padding: 10,
+        margin: 10,
+    },
+
+    notifyImage: {
+        marginLeft: 10,
+        borderRadius: 10,
+        width: 75,
+        height: 75,
+        padding: 10
+    },
+
+    notifyInfo: {
+        justifyContent: "space-evenly",
+        flexDirection: "column",
+        alignItems: "center"
+    },
+
+    notifyName: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 16,
+    },
+
+    notifyDescription: {
+        color: "white",
+        fontSize: 14,
+    },
+
+    notifyTime: {
+        color: "white",
+        fontSize: 14,
+    },
+
+    Marking: {
+        color: "blue",
+        fontSize: 14
+    },
+
+    savedTabs: {
+        flexDirection: "column",
+        justifyContent: "center",
+        gap: 6,
+    },
+
 });

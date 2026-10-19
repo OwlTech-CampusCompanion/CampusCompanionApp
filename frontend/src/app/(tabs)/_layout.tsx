@@ -106,6 +106,26 @@ export default function TabLayout() {
           headerShown: false,
         }}
       />
+
+      // Saved Events
+      <Tabs.Screen
+        name="savedEvents"
+        options={{
+          href: null,
+          headerShown: false,
+        }}
+      />
+
+      // Settings
+      <Tabs.Screen
+        name="settings"
+        options={{
+          href: null,
+          headerShown: false,
+        }}
+      />
+
+      
     </Tabs>
   );
 }
