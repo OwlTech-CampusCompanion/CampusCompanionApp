@@ -2,7 +2,7 @@ import { Text, View, Image, Pressable, } from "react-native";
 import { globalStyles } from "../../../styles/global";
 import { router } from "expo-router/build/global-state/router";
 
-export default function HomeScreen() {
+export default function QuickAccessScreen() {
   return (
       <View style={globalStyles.container}>
         <View style={globalStyles.logoTabsBackground}>
@@ -20,7 +20,7 @@ export default function HomeScreen() {
             />
           </Pressable>
         </View>
-        
+
     </View>
   );
 }
