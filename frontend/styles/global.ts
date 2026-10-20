@@ -468,25 +468,31 @@ export const globalStyles = StyleSheet.create ({
     notifyTop: {
         alignItems: "center",
         justifyContent: "center",
+        margin: "auto",
+        padding: 10,
+        marginTop: 40,
+        marginBottom: 20
     },
 
     notifyButtons: {
-        gap: 6,
-        flexDirection: "column",
+        gap: 4,
+        flexDirection: "row",
         justifyContent:"space-evenly",
     },
 
     notifyPress: {
         backgroundColor: "black",
-        height: 75,
-        width: 150,
-
+        height: 50,
+        width: 90,
+        borderRadius: 20,
+        margin: "auto",
+        marginBottom: 20
     },
 
     notifyTabs: {
         flexDirection: "column",
         justifyContent: "center",
-        gap: 6,
+        gap: 8,
     },
 
     notifyCard: {
@@ -496,6 +502,8 @@ export const globalStyles = StyleSheet.create ({
         flexDirection: "row",
         padding: 10,
         margin: 10,
+        height: 100,
+        alignItems: "center"
     },
 
     notifyImage: {
@@ -529,8 +537,9 @@ export const globalStyles = StyleSheet.create ({
     },
 
     Marking: {
-        color: "blue",
-        fontSize: 14
+        color: "white",
+        fontSize: 18,
+        fontWeight: "bold"
     },
 
     savedTabs: {
@@ -538,5 +547,48 @@ export const globalStyles = StyleSheet.create ({
         justifyContent: "center",
         gap: 6,
     },
+
+    settingsTabs: {
+        flexDirection: "column",
+        justifyContent: "center",
+        gap: 6,
+        marginBottom: 10
+    },
+
+    settingsTab: {
+        backgroundColor: "black",
+        padding: 10,
+        width: 300,
+        margin: "auto",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        borderRadius: 10,
+        height: 50,
+        marginBottom: 10
+    },
+
+    settingsText: {
+        color: "white",
+        fontSize: 16,
+        fontWeight: "bold"
+    },
+
+    savedTop: {
+        margin: "auto",
+        marginBottom: 10
+    },
+
+    settingsHolder: {
+        margin: 15
+    },
+
+    settingsTop: {
+        alignItems: "center",
+        justifyContent: "center",
+        margin: "auto",
+        padding: 10,
+        marginTop: 40,
+    }
 
 });

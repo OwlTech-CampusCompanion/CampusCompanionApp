@@ -7,7 +7,7 @@ export default function NotifyScreen() {
         <ScrollView>
             <View style={globalStyles.container}>
                 <View style={globalStyles.notifyTop}>
-                    <Text style={globalStyles.tabsTitle}>
+                    <Text style={globalStyles.h2}>
                         Notifications
                     </Text>
                 </View>
@@ -106,7 +106,10 @@ export default function NotifyScreen() {
                     </View>
                     <View style={globalStyles.notifyCard}>
                         <Text style={globalStyles.Marking}>
-                            Mall all as read {">"}
+                            Mark all as read
+                        </Text>
+                        <Text style={globalStyles.Marking}>
+                            {">"}
                         </Text>
                     </View>
                 </View>

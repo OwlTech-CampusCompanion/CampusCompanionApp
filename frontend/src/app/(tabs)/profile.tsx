@@ -15,6 +15,7 @@ export default function ProfileScreen() {
       </View>
       <View style={globalStyles.profileTabs}>
         <Pressable
+          onPress={() => router.push("/savedEvents")}
           style={globalStyles.profileTab}
         >
           <Text style={globalStyles.textTab}>Saved Events</Text>

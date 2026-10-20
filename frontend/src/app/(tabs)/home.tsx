@@ -109,7 +109,7 @@ export default function HomeScreen() {
           <Text style={globalStyles.h4}>
             Saved Events
           </Text>
-          <Link href="/events">
+          <Link href="/savedEvents">
             <Text>View All {">"}</Text>
           </Link>
         </View>
