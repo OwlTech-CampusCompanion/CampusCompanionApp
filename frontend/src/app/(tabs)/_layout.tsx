@@ -125,7 +125,14 @@ export default function TabLayout() {
         }}
       />
 
-      
+      // Quick Access
+      <Tabs.Screen
+        name="quickAccess"
+        options={{
+          href: null,
+          headerShown: false,
+        }}
+      />
     </Tabs>
   );
 }

@@ -43,7 +43,7 @@ export default function HomeScreen() {
           <Text style={globalStyles.h4}>
             Quick Access
           </Text>
-          <Link href="/events">
+          <Link href="/(tabs)/quickAccess">
             <Text>View All {">"} </Text>
           </Link>
         </View>
