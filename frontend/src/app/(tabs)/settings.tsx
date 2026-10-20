@@ -48,7 +48,7 @@ export default function SettingsScreen() {
                     <Text style={globalStyles.settingsText}>Change Password</Text>
                     <Text style={globalStyles.settingsText}>{">"}</Text>
                     </Pressable>
-                    <View >
+                    <View style={globalStyles.settingsHolder}>
                         <Text style={globalStyles.h4}>
                             ABOUT
                         </Text>
