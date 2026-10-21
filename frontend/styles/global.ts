@@ -1,10 +1,62 @@
 import { StyleSheet } from "react-native";
 
-export const globalStyles = StyleSheet.create ({
+export const globalStyles = StyleSheet.create({
+    // ==================================================
+    // GENERAL LAYOUT
+    // ==================================================
     container: {
         flex: 1,
     },
 
+    // ==================================================
+    // SHARED TEXT STYLES
+    // ==================================================
+    title: {
+        fontSize: 26,
+        fontWeight: "bold",
+        color: "white",
+        textAlign: "center",
+    },
+
+    text: {
+        fontSize: 16,
+    },
+
+    h2: {
+        fontSize: 24,
+        fontWeight: "bold",
+    },
+
+    h3: {
+        fontSize: 18,
+    },
+
+    h4: {
+        fontSize: 22,
+        fontWeight: "bold"
+    },
+
+    h5: {
+        color: "white",
+        fontSize: 16
+    },
+
+    buttonText: {
+        margin: "auto",
+        fontSize: 18,
+        fontWeight: "bold",
+        color: "white",
+    },
+
+    textTab: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 18,
+    },
+
+    // ==================================================
+    // HEADER AND NAVIGATION TABS
+    // ==================================================
     logoBackground: {
         backgroundColor: "black",
         padding: 30,
@@ -53,7 +105,9 @@ export const globalStyles = StyleSheet.create ({
         marginBottom: 30
     },
 
-
+    // ==================================================
+    // LOGIN AND SIGNUP SCREENS
+    // ==================================================
     loginBody: {
         marginTop: 40
     },
@@ -64,13 +118,6 @@ export const globalStyles = StyleSheet.create ({
         margin: "auto",
         padding: 10,
         marginTop: 20,
-    },
-
-    title: {
-        fontSize: 26,
-        fontWeight: "bold",
-        color: "white",
-        textAlign: "center",
     },
 
     loginInput: {
@@ -104,7 +151,6 @@ export const globalStyles = StyleSheet.create ({
         height: 50,
     },
 
-
     loginLinks: {
         flex: 1,
         justifyContent: "center",
@@ -120,17 +166,6 @@ export const globalStyles = StyleSheet.create ({
         marginBottom: 20,
     },
 
-    buttonText: {
-        margin: "auto",
-        fontSize: 18,
-        fontWeight: "bold",
-        color: "white",
-    },
-
-    text: {
-        fontSize: 16,
-    },
-
     signupLink: {
         fontSize: 16,
         fontWeight: "bold",
@@ -143,20 +178,9 @@ export const globalStyles = StyleSheet.create ({
         fontStyle: "italic"
     },
 
-    h2: {
-        fontSize: 24,
-        fontWeight: "bold",
-    },
-
-    h3: {
-        fontSize: 18,
-    },
-
-    h4: {
-        fontSize: 22,
-        fontWeight: "bold"
-    },
-
+    // ==================================================
+    // SHARED SCREEN TITLES AND HEADINGS
+    // ==================================================
     hTitles: {
         padding: 10,
         flexDirection: "column",
@@ -172,6 +196,51 @@ export const globalStyles = StyleSheet.create ({
         marginLeft: 10,
     },
 
+    Titles: {
+        padding: 10,
+        marginLeft: 10,
+        marginBottom: 10,
+        marginTop: 20
+    },
+
+    // ==================================================
+    // HOME SCREEN AND QUICK ACCESS
+    // ==================================================
+    quickTabs: {
+        flexDirection: "row",
+        gap: 6,
+        justifyContent: "center",
+    },
+
+    accessTabs: {
+        gap: 10
+    },
+
+    tabs: {
+        backgroundColor: "black",
+        padding: 10,
+        gap: 10,
+        borderRadius: 20,
+        height: 125,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+
+    accessTitles: {
+        padding: 10,
+        flexDirection: "column",
+        justifyContent: "space-between",
+        marginLeft: 10,
+        marginTop: 25
+    },
+
+    eventActivity: {
+        color: "white"
+    },
+
+    // ==================================================
+    // EVENTS SCREEN AND EVENT CARDS
+    // ==================================================
     eventCard: {
         flexDirection: "row",
         backgroundColor: "black",
@@ -220,13 +289,55 @@ export const globalStyles = StyleSheet.create ({
         color: "white",
     },
 
-    Titles: {
-        padding: 10,
-        marginLeft: 10,
-        marginBottom: 10,
-        marginTop: 20
+    eventButtons: {
+        flexDirection: "row",
+        justifyContent: "center",
+        gap: 10
     },
 
+    eventTitles: {
+        padding: 10,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginLeft: 10,
+    },
+
+    eventPress: {
+        backgroundColor: "black",
+        borderRadius: 20,
+        width: 120,
+        height: 40,
+        marginBottom: 20,
+    },
+
+    rsvp: {
+        backgroundColor: "white",
+        alignItems: "center",
+        borderRadius: 4,
+        width: 100,
+        padding: 2
+    },
+
+    eventsCard: {
+        flexDirection: "row",
+        backgroundColor: "black",
+        borderRadius: 20,
+        padding: 10,
+        margin: 10,
+        height: 150,
+    },
+
+    eventImage: {
+        marginLeft: 10,
+        borderRadius: 20,
+        width: 150,
+        height: 130
+    },
+
+    // ==================================================
+    // MAP SCREEN AND MAP CONTROLS
+    // ==================================================
     searchInput: {
         flexDirection: "row",
         alignItems: "center",
@@ -257,52 +368,81 @@ export const globalStyles = StyleSheet.create ({
         gap: 4
     },
 
-    eventButtons: {
+    mapButtonText: {
+        fontSize: 14,
+        fontWeight: "600",
+        color: "#806000",
+    },
+
+    pressMap: {
+        width: "100%",
+    },
+
+    viewMap: {
         flexDirection: "row",
+        alignItems: "center",
         justifyContent: "center",
-        gap: 10
+        gap: 8,
+        paddingVertical: 12,
+        borderWidth: 1,
+        borderColor: "#D9B84B",
+        borderRadius: 10,
+        backgroundColor: "#FFFCF2",
     },
 
-    eventTitles: {
-        padding: 10,
+    // ==================================================
+    // LOCATION CARDS AND FAVORITES
+    // ==================================================
+    locationCard: {
+        backgroundColor: "black",
+        borderRadius: 16,
+        padding: 16,
+        borderWidth: 1,
+        borderColor: "#E5E7EB",
+        gap: 16,
+    },
+
+    locationHeader: {
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-between",
-        marginLeft: 10,
-    },
-    
-    eventPress: {
-        backgroundColor: "black",
-        borderRadius: 20,
-        width: 120,
-        height: 40,
-        marginBottom: 20,
+        gap: 12,
     },
 
-    rsvp: {
-        backgroundColor: "white",
-        alignItems: "center",
-        borderRadius: 4,
-        width: 100,
-        padding: 2        
+    locationImage: {
+        width: 70,
+        height: 70,
+        borderRadius: 12,
     },
 
-    eventsCard: {
-        flexDirection: "row",
-        backgroundColor: "black",
-        borderRadius: 20,
-        padding: 10,
-        margin: 10,
-        height: 150,
+    locationInfo: {
+        flex: 1,
+        gap: 4,
+        alignItems: "center"
     },
 
-    eventImage: {
-        marginLeft: 10,
-        borderRadius: 20,
-        width: 150,
-        height: 130
+    favoriteStar: {
+        padding: 4,
     },
 
+    starIcon: {
+        fontSize: 24,
+        color: "#D6A400",
+    },
+
+    savedTabs: {
+        flexDirection: "column",
+        justifyContent: "center",
+        gap: 6,
+    },
+
+    savedTop: {
+        margin: "auto",
+        marginBottom: 10
+    },
+
+    // ==================================================
+    // DINING SCREEN
+    // ==================================================
     diningCard: {
         flexDirection: "row",
         backgroundColor: "black",
@@ -336,53 +476,9 @@ export const globalStyles = StyleSheet.create ({
         color: "white",
     },
 
-    profileBackground: {
-        alignItems: "center",
-        marginTop: 40,
-        marginBottom: 10,
-        gap: 10
-    },
-
-    profileImage: {
-        height: 150,
-        width: 150,
-        backgroundColor: "black",
-        borderRadius: 100,
-        margin: 20
-    },
-
-    profileTabs: {
-        gap: 5,
-        margin: 10,
-        marginBottom: 50
-    },
-
-    profileTab: {
-        backgroundColor: "black",
-        padding: 10,
-        width: 300,
-        margin: "auto",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        borderRadius: 10,
-        height: 50
-    },
-
-    logoutButton: {
-        borderRadius: 10,
-        backgroundColor: "black",
-        width: 350,
-        height: 50,
-        margin: "auto"
-    },
-
-    textTab: {
-        color: "white",
-        fontWeight: "bold",
-        fontSize: 18,
-    },
-
+    // ==================================================
+    // SHUTTLE SCREEN
+    // ==================================================
     shuttlePressable: {
         justifyContent: "center",
         flexDirection: "row",
@@ -465,6 +561,9 @@ export const globalStyles = StyleSheet.create ({
         fontSize: 20
     },
 
+    // ==================================================
+    // NOTIFICATIONS SCREEN
+    // ==================================================
     notifyTop: {
         alignItems: "center",
         justifyContent: "center",
@@ -477,7 +576,7 @@ export const globalStyles = StyleSheet.create ({
     notifyButtons: {
         gap: 4,
         flexDirection: "row",
-        justifyContent:"space-evenly",
+        justifyContent: "space-evenly",
     },
 
     notifyPress: {
@@ -542,12 +641,53 @@ export const globalStyles = StyleSheet.create ({
         fontWeight: "bold"
     },
 
-    savedTabs: {
-        flexDirection: "column",
-        justifyContent: "center",
-        gap: 6,
+    // ==================================================
+    // PROFILE SCREEN
+    // ==================================================
+    profileBackground: {
+        alignItems: "center",
+        marginTop: 40,
+        marginBottom: 10,
+        gap: 10
     },
 
+    profileImage: {
+        height: 150,
+        width: 150,
+        backgroundColor: "black",
+        borderRadius: 100,
+        margin: 20
+    },
+
+    profileTabs: {
+        gap: 5,
+        margin: 10,
+        marginBottom: 50
+    },
+
+    profileTab: {
+        backgroundColor: "black",
+        padding: 10,
+        width: 300,
+        margin: "auto",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        borderRadius: 10,
+        height: 50
+    },
+
+    logoutButton: {
+        borderRadius: 10,
+        backgroundColor: "black",
+        width: 350,
+        height: 50,
+        margin: "auto"
+    },
+
+    // ==================================================
+    // SETTINGS SCREEN
+    // ==================================================
     settingsTabs: {
         flexDirection: "column",
         justifyContent: "center",
@@ -574,11 +714,6 @@ export const globalStyles = StyleSheet.create ({
         fontWeight: "bold"
     },
 
-    savedTop: {
-        margin: "auto",
-        marginBottom: 10
-    },
-
     settingsHolder: {
         margin: 15
     },
@@ -590,101 +725,4 @@ export const globalStyles = StyleSheet.create ({
         padding: 10,
         marginTop: 40,
     },
-
-    quickTabs: {
-        flexDirection: "row",
-        gap: 6,
-        justifyContent: "center",
-    },
-
-    accessTabs: {
-        gap: 10
-    },
-
-    tabs: {
-        backgroundColor: "black",
-        padding: 10,
-        gap: 10,
-        borderRadius: 20,
-        height: 125,
-        justifyContent: "center",
-        alignItems: "center"
-    },
-
-    h5: {
-        color: "white",
-        fontSize: 16
-    },
-
-    accessTitles: {
-        padding: 10,
-        flexDirection: "column",
-        justifyContent: "space-between",
-        marginLeft: 10,
-        marginTop: 25
-    },
-
-    eventActivity: {
-        color: "white"
-
-    },
-
-    mapButtonText: {
-        fontSize: 14,
-        fontWeight: "600",
-        color: "#806000",
-    },
-
-    pressMap: {
-        width: "100%",
-    },
-
-    viewMap: {
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: 8,
-        paddingVertical: 12,
-        borderWidth: 1,
-        borderColor: "#D9B84B",
-        borderRadius: 10,
-        backgroundColor: "#FFFCF2",
-    },
-
-    locationInfo: {
-        flex: 1,
-        gap: 4,
-        alignItems: "center"
-    },
-
-    locationImage: {
-        width: 70,
-        height: 70,
-        borderRadius: 12,
-    },
-
-    locationCard: {
-        backgroundColor: "black",
-        borderRadius: 16,
-        padding: 16,
-        borderWidth: 1,
-        borderColor: "#E5E7EB",
-        gap: 16,
-    },
-
-    locationHeader: {
-        flexDirection: "row",
-        alignItems: "center",
-        gap: 12,
-    },
-
-    favoriteStar: {
-        padding: 4,
-    },
-
-    starIcon: {
-        fontSize: 24,
-        color: "#D6A400",
-    },
-
 });
