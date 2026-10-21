@@ -1,6 +1,7 @@
 import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback } from "react-native";
 import { globalStyles } from "../../../styles/global";
 import { router } from "expo-router/build/global-state/router";
+import AnimatedButton from "../../app/components/AnimatedButton";
 
 export default function QuickAccessScreen() {
   return (
@@ -33,7 +34,7 @@ export default function QuickAccessScreen() {
       </View>
       <View style={globalStyles.quickTabs}>
         <View style={globalStyles.accessTabs}>
-          <Pressable 
+          <AnimatedButton 
             onPress={() => router.push("/(tabs)/map")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
@@ -42,8 +43,8 @@ export default function QuickAccessScreen() {
             <Text style={globalStyles.h5}>
               Find buildings
             </Text>
-          </Pressable>
-          <Pressable
+          </AnimatedButton>
+          <AnimatedButton
             onPress={() => router.push("/(tabs)/events")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
@@ -52,17 +53,17 @@ export default function QuickAccessScreen() {
             <Text style={globalStyles.h5}>
               What's happening
             </Text>
-          </Pressable>
-          <Pressable
+          </AnimatedButton>
+          <AnimatedButton
             onPress={() => router.push("/(tabs)/notification")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
               Notifications
             </Text>
-          </Pressable>
+          </AnimatedButton>
         </View>
         <View style={globalStyles.accessTabs}>
-          <Pressable
+          <AnimatedButton
             onPress={() => router.push("/(tabs)/shuttle")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
@@ -71,8 +72,8 @@ export default function QuickAccessScreen() {
             <Text style={globalStyles.h5}>
               Routes and stops
             </Text>
-          </Pressable>
-          <Pressable
+          </AnimatedButton>
+          <AnimatedButton
             onPress={() => router.push("/(tabs)/dining")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
@@ -81,14 +82,14 @@ export default function QuickAccessScreen() {
             <Text style={globalStyles.h5}>
               Menus and hours
             </Text>
-          </Pressable>
-          <Pressable 
+          </AnimatedButton>
+          <AnimatedButton 
             onPress={() => router.push("/(tabs)/favoriteLocations")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
               Buildings
             </Text>
-          </Pressable>
+          </AnimatedButton>
         </View>
       </View>
       <View style={globalStyles.eventTitles}>

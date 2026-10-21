@@ -95,7 +95,19 @@ export const globalStyles = StyleSheet.create({
         width: 90,
         borderRadius: 16,
         alignItems: "center",
-        padding: 10
+        padding: 10,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 6,
+
+        // Andriod shadow
+        elevation: 6,
     },
 
     tabHolder: {
@@ -248,7 +260,19 @@ export const globalStyles = StyleSheet.create({
         borderRadius: 20,
         height: 125,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 6,
+
+        // Andriod shadow
+        elevation: 6,
     },
 
     accessTitles: {

@@ -67,14 +67,12 @@ export default function SettingsScreen() {
                     <Text style={globalStyles.settingsText}>{">"}</Text>
                     </Pressable>
                 </View>
-                <View style={globalStyles.logoutButton}>
-                    <AnimatedButton
-                        onPress={() => router.push("/")}
-                        style={globalStyles.settingsTab}
-                    >
+                <AnimatedButton
+                    onPress={() => router.push("/")}
+                    style={globalStyles.logoutButton}
+                >
                     <Text style={globalStyles.buttonText}>Log Out</Text>
-                    </AnimatedButton>
-                </View>
+                </AnimatedButton>
             </View>
         </ScrollView>
     );
