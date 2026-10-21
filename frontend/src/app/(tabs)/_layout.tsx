@@ -133,6 +133,16 @@ export default function TabLayout() {
           headerShown: false,
         }}
       />
+
+      // Favorite Locations
+      <Tabs.Screen
+        name="favoriteLocations"
+        options={{
+          href: null,
+          headerShown: false,
+        }}
+      />
+      
     </Tabs>
   );
 }

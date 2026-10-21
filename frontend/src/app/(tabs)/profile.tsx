@@ -22,6 +22,7 @@ export default function ProfileScreen() {
           <Text style={globalStyles.textTab}>{">"}</Text>
         </Pressable>
         <Pressable
+          onPress={() => router.push("/favoriteLocations")}
           style={globalStyles.profileTab}
         >
           <Text style={globalStyles.textTab}>Favorite Locations</Text>

@@ -622,6 +622,69 @@ export const globalStyles = StyleSheet.create ({
         justifyContent: "space-between",
         marginLeft: 10,
         marginTop: 25
-    }
+    },
+
+    eventActivity: {
+        color: "white"
+
+    },
+
+    mapButtonText: {
+        fontSize: 14,
+        fontWeight: "600",
+        color: "#806000",
+    },
+
+    pressMap: {
+        width: "100%",
+    },
+
+    viewMap: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: 8,
+        paddingVertical: 12,
+        borderWidth: 1,
+        borderColor: "#D9B84B",
+        borderRadius: 10,
+        backgroundColor: "#FFFCF2",
+    },
+
+    locationInfo: {
+        flex: 1,
+        gap: 4,
+        alignItems: "center"
+    },
+
+    locationImage: {
+        width: 70,
+        height: 70,
+        borderRadius: 12,
+    },
+
+    locationCard: {
+        backgroundColor: "black",
+        borderRadius: 16,
+        padding: 16,
+        borderWidth: 1,
+        borderColor: "#E5E7EB",
+        gap: 16,
+    },
+
+    locationHeader: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 12,
+    },
+
+    favoriteStar: {
+        padding: 4,
+    },
+
+    starIcon: {
+        fontSize: 24,
+        color: "#D6A400",
+    },
 
 });
