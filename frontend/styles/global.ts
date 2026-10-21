@@ -589,6 +589,39 @@ export const globalStyles = StyleSheet.create ({
         margin: "auto",
         padding: 10,
         marginTop: 40,
+    },
+
+    quickTabs: {
+        flexDirection: "row",
+        gap: 6,
+        justifyContent: "center",
+    },
+
+    accessTabs: {
+        gap: 10
+    },
+
+    tabs: {
+        backgroundColor: "black",
+        padding: 10,
+        gap: 10,
+        borderRadius: 20,
+        height: 125,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+
+    h5: {
+        color: "white",
+        fontSize: 16
+    },
+
+    accessTitles: {
+        padding: 10,
+        flexDirection: "column",
+        justifyContent: "space-between",
+        marginLeft: 10,
+        marginTop: 25
     }
 
 });
