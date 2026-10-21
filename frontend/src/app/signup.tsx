@@ -2,6 +2,7 @@ import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeed
 import { globalStyles } from "../../styles/global";
 import { Link } from "expo-router";
 import { useState } from "react";
+import AnimatedButton from "../app/components/AnimatedButton";
 
 export default function Signup() {
 
@@ -119,11 +120,11 @@ export default function Signup() {
           />
         </View>
         <View style={globalStyles.loginLinks}>
-          <Pressable 
+          <AnimatedButton
             onPress={handleSignUp}
             style={globalStyles.loginButton}>
             <Text style={globalStyles.buttonText}>Create Account</Text>
-            </Pressable>
+          </AnimatedButton>
         </View>
         <View style={globalStyles.loginLinks}>
           <Text style={globalStyles.text}>Already have an account? {" "}

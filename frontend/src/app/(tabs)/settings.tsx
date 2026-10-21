@@ -1,6 +1,7 @@
 import { Text, View, Image, Pressable, ScrollView,} from "react-native";
 import { globalStyles } from "../../../styles/global";
 import { router } from "expo-router/build/global-state/router";
+import AnimatedButton from "../../app/components/AnimatedButton";
 
 export default function SettingsScreen() {
     return (
@@ -17,13 +18,13 @@ export default function SettingsScreen() {
                     </Text>
                 </View>
                 <View style={globalStyles.settingsTabs}>
-                    <Pressable
+                    <AnimatedButton
                         onPress={() => router.push("/(tabs)/notification")}
                         style={globalStyles.settingsTab}
                     >
                     <Text style={globalStyles.settingsText}>Push Notifications</Text>
                     <Text style={globalStyles.settingsText}>{">"}</Text>
-                    </Pressable>
+                    </AnimatedButton>
                     <Pressable
                         style={globalStyles.settingsTab}
                     >
@@ -35,13 +36,13 @@ export default function SettingsScreen() {
                             ACCOUNT
                         </Text>
                     </View>
-                    <Pressable
+                    <AnimatedButton
                         onPress={() => router.push("/profile")}
                         style={globalStyles.settingsTab}
                     >
                     <Text style={globalStyles.settingsText}>Edit Profile</Text>
                     <Text style={globalStyles.settingsText}>{">"}</Text>
-                    </Pressable>
+                    </AnimatedButton>
                     <Pressable
                         style={globalStyles.settingsTab}
                     >
@@ -67,12 +68,12 @@ export default function SettingsScreen() {
                     </Pressable>
                 </View>
                 <View style={globalStyles.logoutButton}>
-                    <Pressable
+                    <AnimatedButton
                         onPress={() => router.push("/")}
                         style={globalStyles.settingsTab}
                     >
                     <Text style={globalStyles.buttonText}>Log Out</Text>
-                    </Pressable>
+                    </AnimatedButton>
                 </View>
             </View>
         </ScrollView>

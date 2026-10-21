@@ -2,6 +2,7 @@ import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeed
 import { globalStyles } from "../../../styles/global";
 import { Link } from "expo-router";
 import { router } from "expo-router/build/global-state/router";
+import AnimatedButton from "../../app/components/AnimatedButton";
 
 export default function HomeScreen() {
   return (
@@ -49,7 +50,7 @@ export default function HomeScreen() {
         </View>
         <View style={globalStyles.tabHolder}>
           <View>
-            <Pressable
+            <AnimatedButton
               onPress={() => router.push("/map")}
               style={globalStyles.tabPress}
             >
@@ -60,10 +61,10 @@ export default function HomeScreen() {
               <Text style={globalStyles.buttonText}>
                 Map
               </Text>
-            </Pressable>
+            </AnimatedButton>
           </View>
           <View>
-            <Pressable
+            <AnimatedButton
               onPress={() => router.push("/events")}
               style={globalStyles.tabPress}
             >
@@ -74,10 +75,10 @@ export default function HomeScreen() {
               <Text style={globalStyles.buttonText}>
                 Events
               </Text>
-            </Pressable>
+            </AnimatedButton>
           </View>
           <View>
-            <Pressable
+            <AnimatedButton
               onPress={() => router.push("/dining")}
               style={globalStyles.tabPress}
             >
@@ -88,10 +89,10 @@ export default function HomeScreen() {
               <Text style={globalStyles.buttonText}>
                 Dining
               </Text>
-            </Pressable>
+            </AnimatedButton>
           </View>
           <View>
-            <Pressable
+            <AnimatedButton
               onPress={() => router.push("/shuttle")}
               style={globalStyles.tabPress}
             >
@@ -102,7 +103,7 @@ export default function HomeScreen() {
               <Text style={globalStyles.buttonText}>
                 Shuttle
               </Text>
-            </Pressable>
+            </AnimatedButton>
           </View>
         </View>
         <View style={globalStyles.homeTitles}>

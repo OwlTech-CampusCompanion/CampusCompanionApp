@@ -2,6 +2,7 @@ import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeed
 import { globalStyles } from "../../styles/global";
 import { Link, router } from "expo-router";
 import { useState } from "react";
+import AnimatedButton from "../app/components/AnimatedButton";
 
 export default function Index() {
 
@@ -67,11 +68,11 @@ export default function Index() {
           />
         </View>
         <View style={globalStyles.loginLinks}>
-          <Pressable 
-            onPress={() => router.replace("/home")}
-            style={globalStyles.loginButton}>
+          <AnimatedButton
+              onPress={() => router.replace("/home")}
+              style={globalStyles.loginButton}>
             <Text style={globalStyles.buttonText}>Login</Text>
-            </Pressable>
+            </AnimatedButton>
           <Text style={globalStyles.text}>Forgot password?</Text>
         </View>
         <View style={globalStyles.loginLinks}>

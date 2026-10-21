@@ -10,7 +10,7 @@ export default function TabLayout() {
           height: 70,
         },
 
-        tabBarActiveTintColor: "white",
+        tabBarActiveTintColor: "#ffc629",
         tabBarInactiveTintColor: "gray",
       }}
     >

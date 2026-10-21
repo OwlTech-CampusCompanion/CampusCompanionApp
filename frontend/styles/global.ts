@@ -93,7 +93,7 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: "black",
         height: 100,
         width: 90,
-        borderRadius: 20,
+        borderRadius: 16,
         alignItems: "center",
         padding: 10
     },
@@ -128,7 +128,20 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: "rgba(52, 52, 52, 0.05)",
         width: 350,
         margin: "auto",
-        marginBottom: 20
+        marginBottom: 20,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
+        
     },
 
     iconLogo: {
@@ -159,11 +172,23 @@ export const globalStyles = StyleSheet.create({
     },
 
     loginButton: {
-        borderRadius: 10,
+        borderRadius: 12,
         backgroundColor: "black",
         width: 350,
         height: 50,
         marginBottom: 20,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     signupLink: {
@@ -244,9 +269,21 @@ export const globalStyles = StyleSheet.create({
     eventCard: {
         flexDirection: "row",
         backgroundColor: "black",
-        borderRadius: 20,
-        padding: 10,
+        borderRadius: 16,
+        padding: 16,
         margin: 10,
+        
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     eventDate: {
@@ -326,6 +363,18 @@ export const globalStyles = StyleSheet.create({
         padding: 10,
         margin: 10,
         height: 150,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     eventImage: {
@@ -346,7 +395,19 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: "rgba(52, 52, 52, 0.05)",
         width: 350,
         marginLeft: 20,
-        marginBottom: 30
+        marginBottom: 30,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     map: {
@@ -449,6 +510,18 @@ export const globalStyles = StyleSheet.create({
         borderRadius: 20,
         padding: 10,
         margin: 10,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     diningImage: {
@@ -489,7 +562,7 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: "black",
         borderRadius: 20,
         width: 175,
-        alignItems: "center"
+        alignItems: "center",
     },
 
     shuttleTitles: {
@@ -518,6 +591,18 @@ export const globalStyles = StyleSheet.create({
         flexDirection: "row",
         padding: 10,
         margin: 10,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     shuttleImage: {
@@ -602,7 +687,19 @@ export const globalStyles = StyleSheet.create({
         padding: 10,
         margin: 10,
         height: 100,
-        alignItems: "center"
+        alignItems: "center",
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     notifyImage: {
@@ -674,7 +771,19 @@ export const globalStyles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "space-between",
         borderRadius: 10,
-        height: 50
+        height: 50,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     logoutButton: {
@@ -682,7 +791,19 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: "black",
         width: 350,
         height: 50,
-        margin: "auto"
+        margin: "auto",
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     // ==================================================
@@ -705,7 +826,19 @@ export const globalStyles = StyleSheet.create({
         justifyContent: "space-between",
         borderRadius: 10,
         height: 50,
-        marginBottom: 10
+        marginBottom: 10,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.4,
+        shadowRadius: 10,
+
+        // Andriod shadow
+        elevation: 10,
     },
 
     settingsText: {

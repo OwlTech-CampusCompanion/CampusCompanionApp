@@ -1,6 +1,7 @@
 import { Text, View, Image, Pressable } from "react-native";
 import { globalStyles } from "../../../styles/global";
 import { router } from "expo-router/build/global-state/router";
+import AnimatedButton from "../../app/components/AnimatedButton";
 
 export default function ProfileScreen() {
   return (
@@ -14,44 +15,44 @@ export default function ProfileScreen() {
         <Text style={globalStyles.h3}>JohnDoe23@students.kennesaw.edu</Text>
       </View>
       <View style={globalStyles.profileTabs}>
-        <Pressable
+        <AnimatedButton
           onPress={() => router.push("/savedEvents")}
           style={globalStyles.profileTab}
         >
           <Text style={globalStyles.textTab}>Saved Events</Text>
           <Text style={globalStyles.textTab}>{">"}</Text>
-        </Pressable>
-        <Pressable
+        </AnimatedButton>
+        <AnimatedButton
           onPress={() => router.push("/favoriteLocations")}
           style={globalStyles.profileTab}
         >
           <Text style={globalStyles.textTab}>Favorite Locations</Text>
           <Text style={globalStyles.textTab}>{">"}</Text>
-        </Pressable>
-        <Pressable
+        </AnimatedButton>
+        <AnimatedButton
           onPress={() => router.push("/notification")}
           style={globalStyles.profileTab}
         >
           <Text style={globalStyles.textTab}>Notifications</Text>
           <Text style={globalStyles.textTab}>{">"}</Text>
-        </Pressable>
-        <Pressable
+        </AnimatedButton>
+        <AnimatedButton
           onPress={() => router.push("/settings")}
           style={globalStyles.profileTab}
         >
           <Text style={globalStyles.textTab}>Settings</Text>
           <Text style={globalStyles.textTab}>{">"}</Text>
-        </Pressable>
+        </AnimatedButton>
       </View>
       <View>
-        <Pressable
+        <AnimatedButton
           onPress={() => router.replace("/")}
           style={globalStyles.logoutButton}
         >
           <Text style={globalStyles.buttonText}>
             Log Out
           </Text>
-        </Pressable>
+        </AnimatedButton>
       </View>
     </View>
   );
