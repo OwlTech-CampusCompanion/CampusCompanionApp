@@ -257,7 +257,7 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: "black",
         padding: 10,
         gap: 10,
-        borderRadius: 20,
+        borderRadius: 16,
         height: 125,
         justifyContent: "center",
         alignItems: "center",
@@ -366,24 +366,37 @@ export const globalStyles = StyleSheet.create({
 
     eventPress: {
         backgroundColor: "black",
-        borderRadius: 20,
+        borderRadius: 12,
         width: 120,
         height: 40,
         marginBottom: 20,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 6,
+
+        // Andriod shadow
+        elevation: 6,
     },
 
     rsvp: {
         backgroundColor: "white",
         alignItems: "center",
-        borderRadius: 4,
+        borderRadius: 10,
         width: 100,
-        padding: 2
+        margin: 10,
+        padding: 4
     },
 
     eventsCard: {
         flexDirection: "row",
         backgroundColor: "black",
-        borderRadius: 20,
+        borderRadius: 16,
         padding: 10,
         margin: 10,
         height: 150,
@@ -403,7 +416,7 @@ export const globalStyles = StyleSheet.create({
 
     eventImage: {
         marginLeft: 10,
-        borderRadius: 20,
+        borderRadius: 16,
         width: 150,
         height: 130
     },
@@ -441,10 +454,22 @@ export const globalStyles = StyleSheet.create({
     },
 
     mapPress: {
-        borderRadius: 20,
+        borderRadius: 16,
         backgroundColor: "black",
         width: 90,
         height: 40,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 6,
+
+        // Andriod shadow
+        elevation: 6,
     },
 
     mapButtons: {
@@ -455,8 +480,8 @@ export const globalStyles = StyleSheet.create({
 
     mapButtonText: {
         fontSize: 14,
-        fontWeight: "600",
-        color: "#806000",
+        fontWeight: "bold",
+        color: "black",
     },
 
     pressMap: {
@@ -471,7 +496,7 @@ export const globalStyles = StyleSheet.create({
         paddingVertical: 12,
         borderWidth: 1,
         borderColor: "#D9B84B",
-        borderRadius: 10,
+        borderRadius: 12,
         backgroundColor: "#FFFCF2",
     },
 
@@ -484,7 +509,24 @@ export const globalStyles = StyleSheet.create({
         padding: 16,
         borderWidth: 1,
         borderColor: "#E5E7EB",
-        gap: 16,
+        gap: 6,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 6,
+
+        // Andriod shadow
+        elevation: 6,
+
+    },
+
+    locationHolder: {
+        gap: 16
     },
 
     locationHeader: {
@@ -531,7 +573,7 @@ export const globalStyles = StyleSheet.create({
     diningCard: {
         flexDirection: "row",
         backgroundColor: "black",
-        borderRadius: 20,
+        borderRadius: 16,
         padding: 10,
         margin: 10,
 
@@ -550,7 +592,7 @@ export const globalStyles = StyleSheet.create({
 
     diningImage: {
         marginLeft: 10,
-        borderRadius: 20,
+        borderRadius: 16,
         width: 150,
         height: 130
     },
@@ -584,9 +626,21 @@ export const globalStyles = StyleSheet.create({
 
     shuttlePress: {
         backgroundColor: "black",
-        borderRadius: 20,
+        borderRadius: 16,
         width: 175,
         alignItems: "center",
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 6,
+
+        // Andriod shadow
+        elevation: 6,
     },
 
     shuttleTitles: {
@@ -609,12 +663,13 @@ export const globalStyles = StyleSheet.create({
     },
 
     shuttleCard: {
-        borderRadius: 20,
+        borderRadius: 16,
         backgroundColor: "black",
         justifyContent: "space-between",
         flexDirection: "row",
         padding: 10,
         margin: 10,
+        height: 120,
 
         // iOS shadow
         shadowColor: "#000000",
@@ -631,10 +686,10 @@ export const globalStyles = StyleSheet.create({
 
     shuttleImage: {
         marginLeft: 10,
-        borderRadius: 10,
-        width: 75,
-        height: 75,
-        padding: 10
+        width: 50,
+        height: 50,
+        padding: 10,
+        margin: "auto"
     },
 
     shuttleInfo: {
@@ -692,9 +747,21 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: "black",
         height: 50,
         width: 90,
-        borderRadius: 20,
+        borderRadius: 16,
         margin: "auto",
-        marginBottom: 20
+        marginBottom: 20,
+
+        // iOS shadow
+        shadowColor: "#000000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.12,
+        shadowRadius: 6,
+
+        // Andriod shadow
+        elevation: 6,
     },
 
     notifyTabs: {
@@ -704,7 +771,7 @@ export const globalStyles = StyleSheet.create({
     },
 
     notifyCard: {
-        borderRadius: 20,
+        borderRadius: 16,
         backgroundColor: "black",
         justifyContent: "space-between",
         flexDirection: "row",
@@ -728,7 +795,7 @@ export const globalStyles = StyleSheet.create({
 
     notifyImage: {
         marginLeft: 10,
-        borderRadius: 10,
+        borderRadius: 12,
         width: 75,
         height: 75,
         padding: 10
@@ -794,7 +861,7 @@ export const globalStyles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        borderRadius: 10,
+        borderRadius: 12,
         height: 50,
 
         // iOS shadow
@@ -811,7 +878,7 @@ export const globalStyles = StyleSheet.create({
     },
 
     logoutButton: {
-        borderRadius: 10,
+        borderRadius: 12,
         backgroundColor: "black",
         width: 350,
         height: 50,
@@ -848,7 +915,7 @@ export const globalStyles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        borderRadius: 10,
+        borderRadius: 12,
         height: 50,
         marginBottom: 10,
 

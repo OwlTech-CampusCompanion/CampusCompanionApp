@@ -35,7 +35,7 @@ export default function FavoriteLocationScreen() {
                         4 locations
                     </Text>
                 </View>
-                <View>
+                <View style={globalStyles.locationHolder}>
                     <View style={globalStyles.locationCard}>
                         <View style={globalStyles.locationHeader}>
                             <Image
