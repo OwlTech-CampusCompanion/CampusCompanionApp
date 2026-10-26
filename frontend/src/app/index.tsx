@@ -2,6 +2,8 @@ import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeed
 import { globalStyles } from "../../styles/global";
 import { Link, router } from "expo-router";
 import { useState } from "react";
+import { useEffect } from "react";
+import { testBackendConnection } from ".//services/testConnection";
 import AnimatedButton from "../app/components/AnimatedButton";
 
 export default function Index() {
@@ -23,6 +25,10 @@ export default function Index() {
     
     // Login logic later
   };
+
+    useEffect(() => {
+    testBackendConnection();
+  }, []);
 
   // Login UI
   return (
