@@ -1,10 +1,12 @@
 import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback } from "react-native";
 import { globalStyles } from "../../../styles/global";
-import { Link } from "expo-router";
-import { router } from "expo-router/build/global-state/router";
+import { Link, router } from "expo-router";
+import { useAuth } from "../../context/AuthContext";
 import AnimatedButton from "../../app/components/AnimatedButton";
 
 export default function HomeScreen() {
+
+  const { user } = useAuth();
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={globalStyles.container}>
@@ -25,7 +27,7 @@ export default function HomeScreen() {
         </View>
         <View style={globalStyles.Titles}>
           <Text style={globalStyles.h4}>
-            Good morning, (person name)!
+            Good morning, {user?.fullName ?? "Student"!}
           </Text>
         </View>
         <View style={globalStyles.searchInput}>
@@ -44,7 +46,7 @@ export default function HomeScreen() {
           <Text style={globalStyles.h4}>
             Quick Access
           </Text>
-          <Link href="/(tabs)/quickAccess">
+          <Link href="/quickAccess">
             <Text>View All {">"} </Text>
           </Link>
         </View>

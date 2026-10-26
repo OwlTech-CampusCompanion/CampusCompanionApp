@@ -14,7 +14,7 @@ export default function TabLayout() {
         tabBarInactiveTintColor: "gray",
       }}
     >
-      // Home
+      {/* Home */}
       <Tabs.Screen
         name="home"
         options={{ 
@@ -29,7 +29,7 @@ export default function TabLayout() {
         }}
       />
 
-      //Map
+      {/* Map */}
       <Tabs.Screen
         name="map"
         options={{ 
@@ -44,7 +44,7 @@ export default function TabLayout() {
         }}
       />
 
-      //Events
+      {/* Events */}
       <Tabs.Screen
         name="events"
         options={{ 
@@ -59,7 +59,7 @@ export default function TabLayout() {
         }}
       />
   
-      //Dining
+      {/* Dining */}
       <Tabs.Screen
         name="dining"
         options={{ 
@@ -74,7 +74,7 @@ export default function TabLayout() {
         }}
       />
 
-      //Profile
+      {/* Profile */}
       <Tabs.Screen
         name="profile"
         options={{ 
@@ -89,7 +89,7 @@ export default function TabLayout() {
         }}
       />
 
-      // Shuttle
+      {/* Shuttle */}
       <Tabs.Screen
         name="shuttle"
         options={{
@@ -98,7 +98,7 @@ export default function TabLayout() {
         }}
       />
 
-      // Notification
+      {/* Notifications */}
       <Tabs.Screen
         name="notification"
         options={{
@@ -107,7 +107,7 @@ export default function TabLayout() {
         }}
       />
 
-      // Saved Events
+      {/* Saved Events */}
       <Tabs.Screen
         name="savedEvents"
         options={{
@@ -116,7 +116,7 @@ export default function TabLayout() {
         }}
       />
 
-      // Settings
+      {/* Settings */}
       <Tabs.Screen
         name="settings"
         options={{
@@ -125,7 +125,7 @@ export default function TabLayout() {
         }}
       />
 
-      // Quick Access
+      {/* Quick Access */}
       <Tabs.Screen
         name="quickAccess"
         options={{
@@ -134,7 +134,7 @@ export default function TabLayout() {
         }}
       />
 
-      // Favorite Locations
+      {/* Favorite Locations */}
       <Tabs.Screen
         name="favoriteLocations"
         options={{

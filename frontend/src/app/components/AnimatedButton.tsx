@@ -11,12 +11,14 @@ type AnimatedButtonProps = {
     children: ReactNode;
     onPress: () => void;
     style?: StyleProp<ViewStyle>;
+    disabled?: boolean;
 };
 
 export default function AnimatedButton({
     children,
     onPress,
     style,
+    disabled = false,
 }: AnimatedButtonProps) {
     const scale = useRef(new Animated.Value(1)).current;
 
@@ -42,6 +44,7 @@ export default function AnimatedButton({
                 onPress={onPress}
                 onPressIn={() => animateTo(0.96)}
                 onPressOut={() => animateTo(1)}
+                disabled={disabled}
             >
                 {children}
             </Pressable>

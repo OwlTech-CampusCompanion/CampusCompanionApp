@@ -35,7 +35,7 @@ export default function QuickAccessScreen() {
       <View style={globalStyles.quickTabs}>
         <View style={globalStyles.accessTabs}>
           <AnimatedButton 
-            onPress={() => router.push("/(tabs)/map")}
+            onPress={() => router.push("/map")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
               Campus Map
@@ -45,7 +45,7 @@ export default function QuickAccessScreen() {
             </Text>
           </AnimatedButton>
           <AnimatedButton
-            onPress={() => router.push("/(tabs)/events")}
+            onPress={() => router.push("/events")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
               Events
@@ -55,7 +55,7 @@ export default function QuickAccessScreen() {
             </Text>
           </AnimatedButton>
           <AnimatedButton
-            onPress={() => router.push("/(tabs)/notification")}
+            onPress={() => router.push("/notification")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
               Notifications
@@ -64,7 +64,7 @@ export default function QuickAccessScreen() {
         </View>
         <View style={globalStyles.accessTabs}>
           <AnimatedButton
-            onPress={() => router.push("/(tabs)/shuttle")}
+            onPress={() => router.push("/shuttle")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
               Shuttle Tracker
@@ -74,7 +74,7 @@ export default function QuickAccessScreen() {
             </Text>
           </AnimatedButton>
           <AnimatedButton
-            onPress={() => router.push("/(tabs)/dining")}
+            onPress={() => router.push("/dining")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
               Dining
@@ -84,7 +84,7 @@ export default function QuickAccessScreen() {
             </Text>
           </AnimatedButton>
           <AnimatedButton 
-            onPress={() => router.push("/(tabs)/favoriteLocations")}
+            onPress={() => router.push("/favoriteLocations")}
             style={globalStyles.tabs}>
             <Text style={globalStyles.textTab}>
               Buildings

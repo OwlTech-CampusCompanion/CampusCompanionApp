@@ -1,18 +1,21 @@
 import { Text, View, Image, Pressable } from "react-native";
 import { globalStyles } from "../../../styles/global";
 import { router } from "expo-router/build/global-state/router";
+import { useAuth } from "../../context/AuthContext";
 import AnimatedButton from "../../app/components/AnimatedButton";
 
 export default function ProfileScreen() {
+
+  const { user } = useAuth();
   return (
     <View style={globalStyles.container}>
       <View style={globalStyles.profileBackground}>
         <View style={globalStyles.profileImage}>
           
         </View>
-        <Text style={globalStyles.h4}>FULL NAME</Text>
+        <Text style={globalStyles.h4}>{user?.fullName ?? "Student"}</Text>
         <Text style={globalStyles.h3}>KSU Student</Text>
-        <Text style={globalStyles.h3}>JohnDoe23@students.kennesaw.edu</Text>
+        <Text style={globalStyles.h3}>{user?.email ?? "No email available"}</Text>
       </View>
       <View style={globalStyles.profileTabs}>
         <AnimatedButton

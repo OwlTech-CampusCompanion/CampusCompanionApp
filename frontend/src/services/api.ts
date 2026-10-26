@@ -1,6 +1,27 @@
 
 const API_BASE_URL = "http://10.101.147.233:8080";
 
+
+export type AuthResponse = {
+  token: string;
+  user: {
+    id: string;
+    fullName: string;
+    email: string;
+    role: string;
+  };
+};
+
+export async function loginUser(
+  email: string,
+  password: string
+): Promise<AuthResponse> {
+  return apiRequest<AuthResponse>("/api/auth/login", {
+    method: "POST",
+    body: JSON.stringify({ email, password }),
+  });
+}
+
 export async function apiRequest<T>(
   endpoint: string,
   options: RequestInit = {}

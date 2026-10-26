@@ -1,18 +1,23 @@
 import { Text, View, Image, TextInput, Pressable, Keyboard, TouchableWithoutFeedback } from "react-native";
 import { globalStyles } from "../../styles/global";
 import { Link, router } from "expo-router";
+import { useAuth } from "../context/AuthContext";
 import { useState } from "react";
-import { useEffect } from "react";
-import { testBackendConnection } from ".//services/testConnection";
+import * as SecureStore from "expo-secure-store";
+import { loginUser } from "../services/api";
 import AnimatedButton from "../app/components/AnimatedButton";
 
 export default function Index() {
 
+  const { setUser } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   // function makes sure these email or password aren't empty
-  const handleLogin = () => {
+
+  const [isLoading, setIsLoading ] = useState(false);
+
+  const handleLogin = async () => {
     if (email.trim() === "") {
       alert("Please enter your email!");
       return;
@@ -23,12 +28,32 @@ export default function Index() {
       return;
     }
     
-    // Login logic later
-  };
+    try {
+      setIsLoading(true);
 
-    useEffect(() => {
-    testBackendConnection();
-  }, []);
+      const response = await loginUser(email.trim(), password);
+
+      setUser(response.user);
+
+      await SecureStore.setItemAsync("authToken", response.token);
+
+      router.replace("/home");
+    } catch (error) {
+
+      const message =
+        error instanceof Error
+        ? error.message
+        : "Unable to log in. Please try again.";
+
+      alert(
+        message.includes("401")
+        ? "Invalid email or password."
+        : message
+      );
+    }  finally {
+      setIsLoading(false);
+    }
+  };
 
   // Login UI
   return (
@@ -75,9 +100,11 @@ export default function Index() {
         </View>
         <View style={globalStyles.loginLinks}>
           <AnimatedButton
-              onPress={() => router.replace("/home")}
-              style={globalStyles.loginButton}>
-            <Text style={globalStyles.buttonText}>Login</Text>
+              onPress={handleLogin}
+              disabled={isLoading}
+              style={globalStyles.loginButton}
+          >
+            <Text style={globalStyles.buttonText}>{isLoading ? "Loggin in..." : "Login"}</Text>
             </AnimatedButton>
           <Text style={globalStyles.text}>Forgot password?</Text>
         </View>
